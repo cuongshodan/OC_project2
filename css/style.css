@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
   font-family: "Raleway", sans-serif;
+  margin: 0;
 }
 
 :root {
@@ -171,15 +172,14 @@ p {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
-
   justify-content: space-between;
 }
 
 .hebergements-and-populaires section {
-  background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
+  background-color: var(--main-bg-color);
 }
 
 /****** Hebergements ***********/
@@ -239,6 +239,7 @@ p {
 
 /****** Populaires ***********/
 .populaires {
+  background-color: var(--main-bg-color);
   width: 32%;
 }
 
@@ -406,15 +407,33 @@ footer li {
     justify-content: space-between;
   }
 
+  .logo {
+    padding: 20px;
+  }
+
   .navigation {
     display: flex;
     justify-content: space-around;
+    gap: 0px;
     width: 100%;
   }
 
   .navigation a {
-    padding: 10px;
+    padding: 20px;
     margin-top: 0px;
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 2px rgb(207, 207, 207);
+  }
+
+  a:hover {
+    color: blue;
+    border-top: none;
+    border-bottom: solid 2px blue;
+  }
+
+  .InfoGroup {
+    margin: 50px 10px 0px 10px;
   }
 
   .search-form {
@@ -439,14 +458,34 @@ footer li {
     display: inline; /* Show the icon on smaller screens */
   }
 
+  /** filter **/
+
+  .filterButtons {
+    gap: 5px;
+  }
+
+  .filterBar button {
+    padding: 10px;
+    margin: 5px;
+    width: 150px;
+  }
+
+  /** herbergements **/
+
+  .hebergements-and-populaires section {
+    border-radius: 0px;
+
+    width: 100%;
+  }
+
   .hebergements-and-populaires {
     display: flex;
     flex-flow: column-reverse;
+    
   }
 
   .populaires {
     width: 100%;
-    margin-bottom: 50px;
   }
 
   .populaires-cards {
@@ -459,7 +498,9 @@ footer li {
     width: 100%;
   }
 
-  /** hebergements **/
+  #hebergements {
+    background-color: white;
+  }
 
   .hebergements-cards {
     flex-direction: column;
@@ -472,7 +513,12 @@ footer li {
 
   /** activites **/
 
+  .activites {
+    margin: 35px;
+  }
+
   .activites-cards {
+   
     flex-direction: column;
   }
 
