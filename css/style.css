@@ -1,4 +1,4 @@
-/****** General ***********/
+/*  General rules */
 * {
   font-family: "Raleway", sans-serif;
   margin: 0;
@@ -59,7 +59,7 @@ a {
   color: var(--main-bg-color);
 }
 
-/****** Header *********** by me***/
+/*  Header */
 
 header {
   display: flex;
@@ -87,7 +87,7 @@ nav a:hover {
   border-top: solid 2px var(--main-color);
 }
 
-/****** info group ***********/
+/*  info group */
 
 .InfoGroup {
   margin: 50px 0 20px 0;
@@ -151,7 +151,7 @@ p {
   gap: 20px;
 }
 
-.filterBar button {
+.filterBarbutton {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -163,7 +163,7 @@ p {
   cursor: pointer;
 }
 
-.filterBar button:hover {
+.filterBarbutton:hover {
   background-color: var(--filter-bg-color);
 }
 
@@ -173,7 +173,13 @@ p {
   gap: 10px;
 }
 
-/****** Hebergements And Populaires ***********/
+.fa-info {
+  border: 2px solid var(--main-bg-color);
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+}
+
+/* Hebergements And Populaires */
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
@@ -186,7 +192,7 @@ p {
   background-color: var(--main-bg-color);
 }
 
-/****** Hebergements ***********/
+/* Hebergements */
 .hebergements {
   width: 65%;
 }
@@ -240,7 +246,7 @@ p {
   margin-bottom: 5px;
 }
 
-/****** Populaires ***********/
+/*  Populaires */
 .populaires {
   background-color: var(--main-bg-color);
   width: 32%;
@@ -286,9 +292,7 @@ p {
   margin-bottom: 5px;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/***** activités *****/
+/*  activités */
 
 .activites {
   margin-top: 60px;
@@ -341,7 +345,7 @@ p {
   padding: 20px;
 }
 
-/*** footer ****/
+/* footer */
 
 footer {
   display: flex;
@@ -361,7 +365,7 @@ footer li {
   width: 100%;
 }
 
-/****** Media queries ***********/
+/* Media queries */
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   .filterBar {
@@ -502,7 +506,7 @@ footer li {
     display: inline; /* Show the icon on smaller screens */
   }
 
-  /** filter **/
+  /* filter small screen */
 
   .filterContainer {
     display: flex;
@@ -535,7 +539,7 @@ footer li {
     box-sizing: border-box;
   }
 
-  /** herbergements **/
+  /* herbergements small screen */
 
   .hebergements-and-populaires section {
     border-radius: 0;
@@ -583,7 +587,7 @@ footer li {
     margin: 25px 0 0 10px;
   }
 
-  /** activites **/
+  /* activites small screen */
 
   .activites {
     margin: 35px;
@@ -598,9 +602,6 @@ footer li {
     height: 230px;
   }
 
-  .activites-cards .card-content {
-  }
-
   .activites-cards img {
     display: block;
     margin: 0;
@@ -610,7 +611,7 @@ footer li {
     border-top-right-radius: 20px;
   }
 
-  /** footer **/
+  /* footer small screen */
 
   footer {
     display: flex;
