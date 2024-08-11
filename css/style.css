@@ -8,6 +8,7 @@
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
+  --border-color: #d9d9d9;
 }
 
 .fa-solid {
@@ -74,17 +75,38 @@ header {
 .navigation {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  /* gap: 40px; */
 }
 
-.navigation a {
+.navigation ul {
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  /* padding: 10px 0 0 0; */
+}
+
+.navigation ul li {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li a {
+  height: 100%;
   padding-top: 10px;
-  margin-top: 10px;
+  margin: 0;
+
+  /* padding-top: 10px;
+  margin-top: 10px; */
 }
 
-nav a:hover {
-  color: var(--main-color);
-  border-top: solid 2px var(--main-color);
+.navigation ul li a:hover {
+  border-top: 2px solid blue;
+  /* padding-top: 10px;
+  margin-top: 10px; */
 }
 
 /*  info group */
@@ -318,7 +340,6 @@ p {
   display: flex;
   flex-direction: column;
   width: 23%;
-  max-width: 500px;
   flex: 1 1 calc(23% - 10px);
   height: 490px;
   margin-top: 10px;
@@ -437,6 +458,24 @@ footer li {
     justify-content: space-around;
     gap: 0px;
     width: 100%;
+
+  }
+
+  .navigation ul {
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    padding:0;
+    width: 100%;
+    
+  }
+
+  .navigation ul li {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    width: 100%;
   }
 
   .navigation a {
@@ -447,7 +486,12 @@ footer li {
     border-bottom: solid 2px rgb(207, 207, 207);
   }
 
-  nav a:hover {
+  /*   nav a:hover {
+    border-top: none;
+    border-bottom: solid 2px var(--main-color);
+  } */
+
+  .navigation ul li a:hover {
     border-top: none;
     border-bottom: solid 2px var(--main-color);
   }
@@ -460,7 +504,6 @@ footer li {
 
   .InfoGroup {
     margin: 20px;
-    max-width: 500px;
   }
 
   .search-form {
@@ -508,7 +551,6 @@ footer li {
 
   .filterBar {
     width: 100%;
-    max-width: 500px;
   }
 
   .filterButtons {
@@ -557,7 +599,6 @@ footer li {
 
   .populaires-cards a {
     width: 100%;
-    max-width: 500px;
   }
 
   #hebergements {
@@ -573,7 +614,6 @@ footer li {
   .hebergements-cards .card {
     margin-bottom: 0;
     width: 95%;
-    max-width: 500px;
   }
 
   .text-afficher-plus {
