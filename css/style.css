@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 :root {
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
@@ -34,7 +38,7 @@ a {
 
 .section-title {
   margin: 0;
-  font-size: 22px;
+  font-size: 1.5em;
 }
 
 .card {
@@ -49,7 +53,7 @@ a {
 }
 
 .card-title {
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .euro {
@@ -138,6 +142,11 @@ p {
   max-width: 200px;
 }
 
+.search-form input::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
 .search-form button {
   background-color: var(--main-color);
   color: white;
@@ -152,6 +161,10 @@ p {
   padding: 15px;
   background-color: var(--main-bg-color);
   border-radius: 10px 0 0 10px;
+}
+
+.icon-label i {
+  color: black;
 }
 
 .icon {
@@ -423,11 +436,11 @@ footer li {
   }
 
   .populaires-cards .card-title {
-    font-size: 14px;
+    font-size: 1em;
   }
 
   .populaires-cards .card-subtitle {
-    font-size: 13px;
+    font-size: 1em;
   }
 
   .activites-cards .card {
@@ -458,16 +471,14 @@ footer li {
     justify-content: space-around;
     gap: 0px;
     width: 100%;
-
   }
 
   .navigation ul {
     align-items: center;
     justify-content: space-between;
     gap: 0;
-    padding:0;
+    padding: 0;
     width: 100%;
-    
   }
 
   .navigation ul li {
